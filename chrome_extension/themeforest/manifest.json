@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "ThemeForest Upload Progress",
+  "version": "1.0",
+  "description": "To add a percentage to the file upload progress bar",
+  
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+          
+  "homepage_url": "http://wearesupa.com",
+
+  "content_scripts": [
+    {
+      "matches": ["http://themeforest.net/author_dashboard"],
+      "css": ["tf_styles.css"],
+      "js": ["jquery.js", "tf_script.js"]
+    }
+  ]
+}

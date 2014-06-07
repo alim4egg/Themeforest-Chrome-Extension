@@ -14,8 +14,8 @@
   "content_scripts": [
     {
       "matches": ["http://themeforest.net/author_dashboard"],
-      "css": ["tf_styles.css"],
-      "js": ["jquery.js", "tf_script.js"]
+      "css": ["tf_styles.min.css"],
+      "js": ["jquery.js", "tf_script.min.js"]
     }
   ]
 }
